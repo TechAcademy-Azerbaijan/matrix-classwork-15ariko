@@ -7,4 +7,11 @@ let matrix = [
     [318, 237, 184, 36]
 ];
 
-// Write code here. 
+let sum_1 = 0;
+let sum_2 = 0;
+for (let i = 0; i < matrix.length; i++) {
+  let element_1 = matrix[i][i];
+  sum_1 += element_1;
+  let element = matrix[i][matrix[i].length - 1] - i;
+  console.log(element);
+}
